@@ -87,11 +87,11 @@ yarn-install:
 
 # build js artefacts
 vue-build: 
-	@$(RUN) -T vue vue-cli-service build
+	@$(RUN) -T vue yarn build
 
 # watch js artefacts and build on change
 vue-watch:
-	@$(RUN) -T vue vue-cli-service watch
+	@$(RUN) -T vue yarn watch
 
 # cli inside nginx container
 console-nginx:
